@@ -48,6 +48,7 @@ Projeto: GaiaSenses
 
 - jan/25 - fev/25
     - Aquisição de dados via script: finalização dos scripts com download automatizado dos arquivos para o tratamento dos dados climáticos
+    - Adição de animação na plataforma: escolha, adaptação e adição de uma animação referente ao produto de raios na plataforma GaiaSenses
 
 - mar/25 - abr/25
     - API de acesso aos dados do satélte: auxílio na implementação de uma API de acesso aos dados do satélite com os scripts desenvolvidos anteriormente
