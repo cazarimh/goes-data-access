@@ -1,6 +1,4 @@
 import aws_access as aws
-import shutil
-import json
 import numpy as np
 from netCDF4 import Dataset
 
@@ -46,7 +44,7 @@ def get_lightning_data(coord: tuple) -> tuple:
     for i in range(len(lightning_lat)):
         if (np.fabs(lightning_lat[i] - coord[0]) <= 1 and np.fabs(lightning_lon[i] - coord[1]) <= 1):
             if (file['flash_quality_flag'][i] == 0):
-                lightning_event.append(tuple(map(float, (lightning_lat[i], lightning_lon[i], file['flash_energy'][i]))))
+                lightning_event.append(tuple(map(float, (lightning_lat[i], lightning_lon[i], file['flash_energy'][i]/1e-12))))
                 lightning_count += 1
 
     file.close()
