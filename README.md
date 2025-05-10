@@ -55,8 +55,40 @@ Projeto: GaiaSenses
 
 ## Resultados Obtidos
 
+- Aprendizado em implementação de interfaces gestuais e sensores com microcontroladores através do estudo e pesquisa de artigos correlatos
+
+- Implementação bem-sucedida do script para downloas automatizado de dados provenientes do satélite por cada produto
+
+- Integração deste script na API satellite fetcher, viabilizando o acesso aos dados pela plataforma GaiaSenses
+
+- Adição de nova animação referente a raios na plataforma
+
 ## Dificuldades Encontradas
 
+- Documentação escassa sobre os arquivos baixados do satélite
+    - Arquivo com estrutura muito complexa e repleto de informações, a falta de documentação sobre o arquivo dificultou o processo de aprendizado e emprego dos scripts
+    - O curso do INPE foi de muita valia para o processo de automatização dos downloads de arquivos da AWS, porém o foco do curso estava mais em geração de imagens referentes a um fenômeno climático e não no tratamento dos dados propriamente ditos
+
+- Tamanho dos arquivos
+    - A maioria dos arquivos ocupam pouco espaço, cerca de 1MB a depender do produto armazenado, mas há outros arquivos que requerem até 2GB de armazenamento, tornando impraticável o download dos mesmos em toda a chamada da API por conta do tempo de download e das limitações do host da API
+
 ## Próximos Passos / Recomendações
+
+- Recomendações:
+    - Explorar a estrutura dos arquivos NetCDF4 (.nc) desde o início do processo
+        - Destrinchar o arquivo por partes, com a biblioteca NetCDF4 o arquivo é tratado como um objeto com atributos que são matrizes, listas, dicionários e valores atômicos, tais atributos guardam os dados climáticos, flags que descrevem a qualidade dos dados e informações gerais sobre o satélite
+        - Utilização de extensões para visualização simplidicada dos arquivos, por exemplo a extensão H5Web no VSCode que permite a interação com os dados por meio de interface gráfica
+    - Links importantes
+        - Pré-curso INPE: https://geonetcast.wordpress.com/2021/02/25/vlab-processamento-de-dados-de-satelites-geoestacionarios-pre-curso/ (Processamento de dados de satélites geoestacionários)
+        - Curso INPE: https://colab.research.google.com/drive/1cU2unHLGlqQLmc_gE6YhlEyv52K9lYGe?usp=sharing#scrollTo=iQgz5dMgKm19 (Vídeos, Slides, Exemplos/Exercícios)
+        - Guia Introdutório NOAA: https://rammb2.cira.colostate.edu/wp-content/uploads/2024/07/POR_Guia_Introdutorio_aos_Datos_da_Serie_GOES-R_v1.1.pdf (Guia Introdutório aos dados do GOES-R - NOAA, traduzido para o português)
+        - GOES-R Products: https://www.goes-r.gov/products/overview.html (Nome dos produtos e respectiva documentação de cada um deles)
+        - AWS S3 Explorer: https://noaa-goes19.s3.amazonaws.com/index.html (Armazenamento dos arquivos do satélite GOES19 - ao trocar 19 por 16 é possível acessar os arquivos do GOES16)
+        - Relação Produtos e Siglas: http://cimss.ssec.wisc.edu/goes/GOES_ABI_Level_2_Product_Key_update.pdf (Documento não oficial)
+        - Data Names: https://edc.occ-data.org/goes16/getdata/#file-formats (Formato dos arquivos para download)
+
+- Próximos Passos:
+    - Expandir a gama de produtos analisados com a API a fim de tornar a aquisição de dados climáticos mais rica e completa
+    - Otimizar o processo de download para lidar com possíveis arquivos extensos
 
 ## Considerações Finais
