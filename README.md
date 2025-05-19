@@ -72,7 +72,11 @@ Projeto: GaiaSenses
 - Tamanho dos arquivos
     - A maioria dos arquivos ocupam pouco espaço, cerca de 1MB a depender do produto armazenado, mas há outros arquivos que requerem até 2GB de armazenamento, tornando impraticável o download dos mesmos em toda a chamada da API por conta do tempo de download e das limitações do host da API
 
-## Próximos Passos / Recomendações
+## Próximos Passos e Recomendações
+
+- Próximos Passos:
+    - Expandir a gama de produtos analisados com a API a fim de tornar a aquisição de dados climáticos mais rica e completa
+    - Otimizar o processo de download para lidar com possíveis arquivos extensos
 
 - Recomendações:
     - Explorar a estrutura dos arquivos NetCDF4 (.nc) desde o início do processo
@@ -87,8 +91,7 @@ Projeto: GaiaSenses
         - Relação Produtos e Siglas: http://cimss.ssec.wisc.edu/goes/GOES_ABI_Level_2_Product_Key_update.pdf (Documento não oficial)
         - Data Names: https://edc.occ-data.org/goes16/getdata/#file-formats (Formato dos arquivos para download)
 
-- Próximos Passos:
-    - Expandir a gama de produtos analisados com a API a fim de tornar a aquisição de dados climáticos mais rica e completa
-    - Otimizar o processo de download para lidar com possíveis arquivos extensos
-
 ## Considerações Finais
+
+Em suma, as atividades desenvolvidas no GaiaSenses foram de grande valia para meu crescimento acadêmico e meu aprendizado prático, proporcionando experiência em ciência de dados utilizando algumas das principais bibliotecas Python, contato com tecnologias como p5.js, React, TypeScript e Docker e uso de microcontroladores com sensores. Tais atividades contribuíram significativamente para o projeto, principalmente na automatização do processo de download dos arquivos provenientes do satélite GOES-19, aquisição e tratamento dos dados a partir deste produto e implementação de todo este script em uma API, possibilitando que a plataforma do projeto empregasse os dados quase que em tempo real na produção de obras audiovisuais.
+De modo geral, a participação no GaiaSenses proporcionou uma vivência multidisciplinar, pois minhas atividades não se limitaram ao desenvolvimento tecnológico. Realizei tarefas relacionadas a arte, como adaptar uma animação para integrá-la na plataforma e assistir uma apresentação de projeto relacionado ao som, movimento e tecnologia (Corpo Sonoro Expandido). Além de tarefas com caráter mais científico, como pesquisas técnicas sobre Realidades Virtual, Mista e Aumentada, Orientação Espacial com ESP32 e Corpo Sonoro Expandido.
