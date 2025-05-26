@@ -51,13 +51,13 @@ Projeto: GaiaSenses
     - Adição de animação na plataforma: escolha, adaptação e adição de uma animação referente ao produto de raios na plataforma GaiaSenses
 
 - mar/25 - abr/25
-    - API de acesso aos dados do satélte: auxílio na implementação de uma API de acesso aos dados do satélite com os scripts desenvolvidos anteriormente
+    - API de acesso aos dados do satélite: auxílio na implementação de uma API de acesso aos dados do satélite com os scripts desenvolvidos anteriormente
 
 ## Resultados Obtidos
 
 - Aprendizado em implementação de interfaces gestuais e sensores com microcontroladores através do estudo e pesquisa de artigos correlatos
 
-- Implementação bem-sucedida do script para downloas automatizado de dados provenientes do satélite por cada produto
+- Implementação bem-sucedida do script para download automatizado de dados provenientes do satélite por cada produto
 
 - Integração deste script na API satellite fetcher, viabilizando o acesso aos dados pela plataforma GaiaSenses
 
@@ -81,7 +81,7 @@ Projeto: GaiaSenses
 - Recomendações:
     - Explorar a estrutura dos arquivos NetCDF4 (.nc) desde o início do processo
         - Destrinchar o arquivo por partes, com a biblioteca NetCDF4 o arquivo é tratado como um objeto com atributos que são matrizes, listas, dicionários e valores atômicos, tais atributos guardam os dados climáticos, flags que descrevem a qualidade dos dados e informações gerais sobre o satélite
-        - Utilização de extensões para visualização simplidicada dos arquivos, por exemplo a extensão H5Web no VSCode que permite a interação com os dados por meio de interface gráfica
+        - Utilização de extensões para visualização simplificada dos arquivos, por exemplo a extensão H5Web no VSCode que permite a interação com os dados por meio de interface gráfica
     - Links importantes
         - Pré-curso INPE: https://geonetcast.wordpress.com/2021/02/25/vlab-processamento-de-dados-de-satelites-geoestacionarios-pre-curso/ (Processamento de dados de satélites geoestacionários)
         - Curso INPE: https://colab.research.google.com/drive/1cU2unHLGlqQLmc_gE6YhlEyv52K9lYGe?usp=sharing#scrollTo=iQgz5dMgKm19 (Vídeos, Slides, Exemplos/Exercícios)
