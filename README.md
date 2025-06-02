@@ -27,31 +27,31 @@ Projeto: GaiaSenses
     - Ambientação ao projeto: leitura de artigos e exploração de diretórios compartilhados
 
 - jul/24
-    - Auxílio na implementação de interface alternativa: estudo sobre possíveis interfaces gestuais para interação com a plataforma
+    - Auxílio na implementação de interface alternativa: estudo sobre possíveis interfaces gestuais para interação com a plataforma[^1][^2]
 
 - ago/24
-    - Ambientação com algoritmos do projeto: estudo de linguagens utilizadas para o funcionamento do projeto
-    - Aquisição de dados via script: desenvolvimento de scripts mais simples para aquisição de dados -> BDQueimadas, INPE
+    - Ambientação com algoritmos do projeto: estudo de linguagens utilizadas para o funcionamento do projeto[^3]
+    - Aquisição de dados via script: desenvolvimento de scripts mais simples para aquisição de dados -> BDQueimadas, INPE[^4]
 
 - set/24
-    - Aquisição de dados via script: pré-curso INPE para o processamento de dados de satélites geoestacionários[^1]
+    - Aquisição de dados via script: pré-curso INPE para o processamento de dados de satélites geoestacionários[^5]
 
 - out/24
-    - Aquisição de dados via script: curso INPE para o processamento de dados de satélites geoestacionários
+    - Aquisição de dados via script: curso INPE para o processamento de dados de satélites geoestacionários[^6]
 
 - nov/24
-    - Aquisição de dados via script: início do desenvolvimento de scripts para download automatizado dos arquivos do satélite
+    - Aquisição de dados via script: início do desenvolvimento de scripts para download automatizado dos arquivos do satélite[^7][^8][^9][^10][^11]
 
 - dez/24
     - Auxílio na implementação de sensores: utilização de sensores para instalação artística referente ao projeto
-    - Aquisição de dados via script: protótipo com download dos arquivos e tratamento dos dados
+    - Aquisição de dados via script: protótipo com download dos arquivos e tratamento dos dados[^7][^8][^9][^10][^11]
 
 - jan/25 - fev/25
-    - Aquisição de dados via script: finalização dos scripts com download automatizado dos arquivos para o tratamento dos dados climáticos
-    - Adição de animação na plataforma: escolha, adaptação e adição de uma animação referente ao produto de raios na plataforma GaiaSenses
+    - Aquisição de dados via script: finalização dos scripts com download automatizado dos arquivos para o tratamento dos dados climáticos[^7][^8][^9][^10][^11]
+    - Adição de animação na plataforma: escolha, adaptação e adição de uma animação referente ao produto de raios na plataforma GaiaSenses[^12]
 
 - mar/25 - abr/25
-    - API de acesso aos dados do satélite: auxílio na implementação de uma API de acesso aos dados do satélite com os scripts desenvolvidos anteriormente
+    - API de acesso aos dados do satélite: auxílio na implementação de uma API de acesso aos dados do satélite com os scripts desenvolvidos anteriormente[^13]
 
 ## Resultados Obtidos
 
@@ -91,16 +91,29 @@ De modo geral, a participação no GaiaSenses proporcionou uma vivência multidi
 
 ## Referências
 
-[^1]: [Pré-curso INPE](https://geonetcast.wordpress.com/2021/02/25/vlab-processamento-de-dados-de-satelites-geoestacionarios-pre-curso/) (Processamento de dados de satélites geoestacionários)
+[^1]: ALVAREZ, Danilo. Módulo GY-521 (MPU-6050) com o ESP32 | GIROSCÓPIO. 2023. Disponível em: https://portal.vidadesilicio.com.br/gy-521-mpu-6050-esp32-acelerometro-e-giroscopio/. Acesso em: 30 jul. 2024.
 
-[^2]: [Curso INPE](https://colab.research.google.com/drive/1cU2unHLGlqQLmc_gE6YhlEyv52K9lYGe?usp=sharing#scrollTo=iQgz5dMgKm19) (Vídeos, Slides, Exemplos/Exercícios)
+[^2]: ESP32 MPU-6050 Accelerometer and Gyroscope (Arduino) | Random Nerd
+Tutorials. 2021. Disponível em: https://randomnerdtutorials.com/esp32-mpu-6050-accelerometer-gyroscope-arduino/. Acesso em: 30 jul. 2024.
 
-[^3]: [Guia Introdutório NOAA](https://rammb2.cira.colostate.edu/wp-content/uploads/2024/07/POR_Guia_Introdutorio_aos_Datos_da_Serie_GOES-R_v1.1.pdf) (Guia Introdutório aos dados do GOES-R - NOAA, traduzido para o português)
+[^3]: [Repositório GaiaSenses](https://github.com/fmammoli/Gaiasenses-web) (Repositório principal do projeto)
 
-[^4]: [GOES-R Products](https://www.goes-r.gov/products/overview.html) (Nome dos produtos e respectiva documentação de cada um deles)
+[^4]: [BDQueimadas](https://terrabrasilis.dpi.inpe.br/queimadas/portal/) (Portal do INPE que apresenta os focos de incêndios no Brasil com frequência de 10 minutos)
 
-[^5]: [AWS S3 Explorer](https://noaa-goes19.s3.amazonaws.com/index.html) (Armazenamento dos arquivos do satélite GOES19 - ao trocar 19 por 16 é possível acessar os arquivos do GOES16)
+[^5]: [Pré-curso INPE](https://geonetcast.wordpress.com/2021/02/25/vlab-processamento-de-dados-de-satelites-geoestacionarios-pre-curso/) (Processamento de dados de satélites geoestacionários)
 
-[^6]: [Relação Produtos e Siglas](http://cimss.ssec.wisc.edu/goes/GOES_ABI_Level_2_Product_Key_update.pdf) (Documento não oficial)
+[^6]: [Curso INPE](https://colab.research.google.com/drive/1cU2unHLGlqQLmc_gE6YhlEyv52K9lYGe?usp=sharing#scrollTo=iQgz5dMgKm19) (Vídeos, Slides, Exemplos/Exercícios)
 
-[^7]: [Data Names](https://edc.occ-data.org/goes16/getdata/#file-formats) (Formato dos arquivos para download)
+[^7]: [Guia Introdutório NOAA](https://rammb2.cira.colostate.edu/wp-content/uploads/2024/07/POR_Guia_Introdutorio_aos_Datos_da_Serie_GOES-R_v1.1.pdf) (Guia Introdutório aos dados do GOES-R - NOAA, traduzido para o português)
+
+[^8]: [GOES-R Products](https://www.goes-r.gov/products/overview.html) (Nome dos produtos e respectiva documentação de cada um deles)
+
+[^9]: [AWS S3 Explorer](https://noaa-goes19.s3.amazonaws.com/index.html) (Armazenamento dos arquivos do satélite GOES19 - ao trocar 19 por 16 é possível acessar os arquivos do GOES16)
+
+[^10]: [Relação Produtos e Siglas](http://cimss.ssec.wisc.edu/goes/GOES_ABI_Level_2_Product_Key_update.pdf) (Documento não oficial)
+
+[^11]: [Data Names](https://edc.occ-data.org/goes16/getdata/#file-formats) (Formato dos arquivos para download)
+
+[^12]: YAMABE, Masaki. Attractor 0. Disponível em: https://openprocessing.org/sketch/394718. Acesso em: 27 jun 2025 (Adaptado para adicionar ao projeto).
+
+[^13]: [Satellite Fetcher](https://github.com/GaiaSenses/satellite-fetcher-aws) (API para aquisição dos dados provenientes do satélite)
