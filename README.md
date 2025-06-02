@@ -34,7 +34,7 @@ Projeto: GaiaSenses
     - Aquisição de dados via script: desenvolvimento de scripts mais simples para aquisição de dados -> BDQueimadas, INPE
 
 - set/24
-    - Aquisição de dados via script: pré-curso INPE para o processamento de dados de satélites geoestacionários
+    - Aquisição de dados via script: pré-curso INPE para o processamento de dados de satélites geoestacionários[^1]
 
 - out/24
     - Aquisição de dados via script: curso INPE para o processamento de dados de satélites geoestacionários
@@ -82,17 +82,25 @@ Projeto: GaiaSenses
     - Explorar a estrutura dos arquivos NetCDF4 (.nc) desde o início do processo
         - Destrinchar o arquivo por partes, com a biblioteca NetCDF4 o arquivo é tratado como um objeto com atributos que são matrizes, listas, dicionários e valores atômicos, tais atributos guardam os dados climáticos, flags que descrevem a qualidade dos dados e informações gerais sobre o satélite
         - Utilização de extensões para visualização simplidicada dos arquivos, por exemplo a extensão H5Web no VSCode que permite a interação com os dados por meio de interface gráfica
-    - Links importantes
-        - Pré-curso INPE: https://geonetcast.wordpress.com/2021/02/25/vlab-processamento-de-dados-de-satelites-geoestacionarios-pre-curso/ (Processamento de dados de satélites geoestacionários)
-        - Curso INPE: https://colab.research.google.com/drive/1cU2unHLGlqQLmc_gE6YhlEyv52K9lYGe?usp=sharing#scrollTo=iQgz5dMgKm19 (Vídeos, Slides, Exemplos/Exercícios)
-        - Guia Introdutório NOAA: https://rammb2.cira.colostate.edu/wp-content/uploads/2024/07/POR_Guia_Introdutorio_aos_Datos_da_Serie_GOES-R_v1.1.pdf (Guia Introdutório aos dados do GOES-R - NOAA, traduzido para o português)
-        - GOES-R Products: https://www.goes-r.gov/products/overview.html (Nome dos produtos e respectiva documentação de cada um deles)
-        - AWS S3 Explorer: https://noaa-goes19.s3.amazonaws.com/index.html (Armazenamento dos arquivos do satélite GOES19 - ao trocar 19 por 16 é possível acessar os arquivos do GOES16)
-        - Relação Produtos e Siglas: http://cimss.ssec.wisc.edu/goes/GOES_ABI_Level_2_Product_Key_update.pdf (Documento não oficial)
-        - Data Names: https://edc.occ-data.org/goes16/getdata/#file-formats (Formato dos arquivos para download)
 
 ## Considerações Finais
 
 Em suma, as atividades desenvolvidas no GaiaSenses foram de grande valia para meu crescimento acadêmico e meu aprendizado prático, proporcionando experiência em ciência de dados utilizando algumas das principais bibliotecas Python, contato com tecnologias como p5.js, React, TypeScript e Docker e uso de microcontroladores com sensores. Tais atividades contribuíram significativamente para o projeto, principalmente na automatização do processo de download dos arquivos provenientes do satélite GOES-19, aquisição e tratamento dos dados a partir deste produto e implementação de todo este script em uma API, possibilitando que a plataforma do projeto empregasse os dados quase que em tempo real na produção de obras audiovisuais.
 
 De modo geral, a participação no GaiaSenses proporcionou uma vivência multidisciplinar, pois minhas atividades não se limitaram ao desenvolvimento tecnológico. Realizei tarefas relacionadas a arte, como adaptar uma animação para integrá-la na plataforma e assistir uma apresentação de projeto relacionado ao som, movimento e tecnologia (Corpo Sonoro Expandido). Além de tarefas com caráter mais científico, como pesquisas técnicas sobre Realidades Virtual, Mista e Aumentada, Orientação Espacial com ESP32 e Corpo Sonoro Expandido.
+
+## Referências
+
+[^1]: [Pré-curso INPE](https://geonetcast.wordpress.com/2021/02/25/vlab-processamento-de-dados-de-satelites-geoestacionarios-pre-curso/) (Processamento de dados de satélites geoestacionários)
+
+[^2]: [Curso INPE](https://colab.research.google.com/drive/1cU2unHLGlqQLmc_gE6YhlEyv52K9lYGe?usp=sharing#scrollTo=iQgz5dMgKm19) (Vídeos, Slides, Exemplos/Exercícios)
+
+[^3]: [Guia Introdutório NOAA](https://rammb2.cira.colostate.edu/wp-content/uploads/2024/07/POR_Guia_Introdutorio_aos_Datos_da_Serie_GOES-R_v1.1.pdf) (Guia Introdutório aos dados do GOES-R - NOAA, traduzido para o português)
+
+[^4]: [GOES-R Products](https://www.goes-r.gov/products/overview.html) (Nome dos produtos e respectiva documentação de cada um deles)
+
+[^5]: [AWS S3 Explorer](https://noaa-goes19.s3.amazonaws.com/index.html) (Armazenamento dos arquivos do satélite GOES19 - ao trocar 19 por 16 é possível acessar os arquivos do GOES16)
+
+[^6]: [Relação Produtos e Siglas](http://cimss.ssec.wisc.edu/goes/GOES_ABI_Level_2_Product_Key_update.pdf) (Documento não oficial)
+
+[^7]: [Data Names](https://edc.occ-data.org/goes16/getdata/#file-formats) (Formato dos arquivos para download)
