@@ -53,6 +53,20 @@ Projeto: GaiaSenses
 - mar/25 - abr/25
     - API de acesso aos dados do satélite: auxílio na implementação de uma API de acesso aos dados do satélite com os scripts desenvolvidos anteriormente[^13]
 
+- mai/25
+    - Desenvolvimento do Relatório Técnico: escrita do relatório técnico para paper destinado à Conferência Internacional de Criatividade Computacional (ICCC'25 - 23/jun a 27/jun)
+
+- jun/25
+    - Desenvolvimento do Artigo Científico: escrita do artigo científico destinado à Jornada de Iniciação Científica do CTI Renato Archer (JICC´2025 - out/25)
+
+- jul/25
+    - Desenvolvimento do Artigo Científico: escrita do artigo científico destinado à Jornada de Iniciação Científica do CTI Renato Archer (JICC´2025 - out/25)
+    - Implementação de notificações: implementação (back-end) da funcionalidade de inscrição para receber notificações periódicas com um lembrete para acessar o GaiaSenses
+
+- ago/25
+    - Desenvolvimento do Artigo Científico: escrita do artigo científico destinado à Jornada de Iniciação Científica do CTI Renato Archer (JICC´2025 - out/25)
+    - Implementação de notificações: implementação (front-end) da funcionalidade de inscrição para receber notificações periódicas com um lembrete para acessar o GaiaSenses
+
 ## Resultados Obtidos
 
 - Aprendizado em implementação de interfaces gestuais e sensores com microcontroladores através do estudo e pesquisa de artigos correlatos
