@@ -29,35 +29,40 @@ def main():
     print(f'{new_data}, {key}')
 
     return 0
+    
+def get_lightning_data(coord: tuple, dist: int =100) -> tuple:
+    """Returns the events of flashes in a radius of 100km approximately by default"""
 
-def get_lightning_data(coord: tuple) -> tuple:
-    """Returns the events of flashes in a radius of 100km approximately"""
-
-    file_path = aws.awsAccessGOES.download_aws('2')
+    file_path = aws.awsAccessGOES.download_aws('Lightning')
     file = Dataset(file_path)
 
     lightning_lat = file['flash_lat'][:]
     lightning_lon = file['flash_lon'][:]
     lightning_count = 0
-    lightning_event = []
+    lightning_events = []
+    
+    latlondiff = dist/111
+    (lat, lon) = coord
 
     for i in range(len(lightning_lat)):
-        if (np.fabs(lightning_lat[i] - coord[0]) <= 1 and np.fabs(lightning_lon[i] - coord[1]) <= 1):
+        if (np.abs(lightning_lat[i] - lat) <= latlondiff and np.abs(lightning_lon[i] - lon) <= latlondiff):
             if (file['flash_quality_flag'][i] == 0):
-                lightning_event.append(tuple(map(float, (lightning_lat[i], lightning_lon[i], file['flash_energy'][i]/1e-12))))
+                lightning_events.append(tuple(map(float, (lightning_lat[i], lightning_lon[i], file['flash_energy'][i]/1e-12))))
                 lightning_count += 1
 
     file.close()
     
-    return (lightning_event, lightning_count)
+    return (lightning_events, lightning_count)
 
 def get_fireSpot_data(coord: tuple) -> int:
     """Returns the number of fire spots in a radius of 100km approximately"""
 
-    file_path = aws.awsAccessGOES.download_aws('1M')
+    file_path = aws.awsAccessGOES.download_aws('Firespot')
     file = Dataset(file_path)
 
-    i, j = aws.awsAccessGOES.geo2grid(coord[0], coord[1], file)
+    (lat, lon) = coord
+
+    i, j = aws.awsAccessGOES.geo2grid(lat, lon, file)
 
     data = file['DQF'][:]
     data = [line[j - 12 : j + 13] for line in data[i - 12 : i + 13]]
@@ -76,15 +81,19 @@ def get_fireSpot_data(coord: tuple) -> int:
 def get_rainfallRate_data(coord: tuple) -> int:
     """Returns the Rainfall Rate in a specific location"""
 
-    file_path = aws.awsAccessGOES.download_aws('1Q')
+    file_path = aws.awsAccessGOES.download_aws('Rainfall Rate')
     file = Dataset(file_path)
 
-    i, j = aws.awsAccessGOES.geo2grid(coord[0], coord[1], file)
+    (lat, lon) = coord
+
+    i, j = aws.awsAccessGOES.geo2grid(lat, lon, file)
 
     rain_data = float(file['RRQPE'][i][j])
+    rain_data = float(file['RRQPE'][:][i][j])
+    max_rain = float(file['maximum_rainfall_rate'][0])
 
     file.close()
 
-    return int(rain_data)
+    return int(rain_data) if rain_data <= max_rain else 0
 
 main()
