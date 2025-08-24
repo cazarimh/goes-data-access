@@ -14,9 +14,9 @@ class awsAccessGOES:
         products['name'][0] -> Sigla para o produto
         products['name'][1] -> Resolução temporal em minutos
     '''
-    __products = {'Aerossol Detection': ['ABI-L2-ADPF', 10],
-                  'Aerossol Optical Depth': ['ABI-L2-AODF', 10],
-                #   'Aerossol Particle Size': ['ABI-L2-????', ?], # Produto não disponível ainda
+    __products = {'Aerosol Detection': ['ABI-L2-ADPF', 10],
+                  'Aerosol Optical Depth': ['ABI-L2-AODF', 10],
+                #   'Aerosol Particle Size': ['ABI-L2-????', ?], # Produto não disponível ainda
                   'Clear Sky Mask': ['ABI-L2-ACMF', 10],
                   'Cloud Layers': ['ABI-L2-CCLF', 60],
                   'Cloud and Moisture': ['ABI-L2-CMIPF', 10],
