@@ -51,7 +51,7 @@ class awsAccessGOES:
                   'Photosynthetically Active Radiation': ['ABI-L2-PARF', 10]} # Validação prevista para 17/abr/2026, ainda não está documentado no site, mas já está disponível para download
 
     @staticmethod
-    def download_aws(key: str, need_CM: bool =False, band: int =0) -> str:
+    def download_product(key: str, need_CM: bool =False, band: int =0) -> str:
 
         input_archive = awsAccessGOES.__input_archive
 
