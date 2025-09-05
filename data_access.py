@@ -33,7 +33,7 @@ def main():
 def get_lightning_data(coord: tuple, dist: int =100) -> tuple:
     """Returns the events of flashes in a radius of 100km approximately by default"""
 
-    file_path = aws.awsAccessGOES.download_aws('Lightning')
+    file_path = aws.awsAccessGOES.download_product('Lightning')
     file = Dataset(file_path)
 
     lightning_lat = file['flash_lat'][:]
@@ -57,7 +57,7 @@ def get_lightning_data(coord: tuple, dist: int =100) -> tuple:
 def get_fireSpot_data(coord: tuple) -> int:
     """Returns the number of fire spots in a radius of 100km approximately"""
 
-    file_path = aws.awsAccessGOES.download_aws('Firespot')
+    file_path = aws.awsAccessGOES.download_product('Firespot')
     file = Dataset(file_path)
 
     (lat, lon) = coord
@@ -81,7 +81,7 @@ def get_fireSpot_data(coord: tuple) -> int:
 def get_rainfallRate_data(coord: tuple) -> int:
     """Returns the Rainfall Rate in a specific location"""
 
-    file_path = aws.awsAccessGOES.download_aws('Rainfall Rate')
+    file_path = aws.awsAccessGOES.download_product('Rainfall Rate')
     file = Dataset(file_path)
 
     (lat, lon) = coord
