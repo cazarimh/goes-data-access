@@ -2,7 +2,7 @@
 
 Nome: Henrique Cazarim Meirelles Alves
 
-Período: jun/24 - o momento
+Período: jun/24 - out/25
 
 Orientadora: Artemis Moroni
 
@@ -67,6 +67,13 @@ Projeto: GaiaSenses
 - ago/25
     - Desenvolvimento do Artigo Científico: escrita do artigo científico destinado à Jornada de Iniciação Científica do CTI Renato Archer (JICC´2025 - out/25)
     - Implementação de notificações: implementação (front-end) da funcionalidade de inscrição para receber notificações periódicas com um lembrete para acessar o GaiaSenses[^3]
+
+- set/25
+    - Desenvolvimento do Artigo Científico: escrita do artigo científico destinado à Jornada de Iniciação Científica do CTI Renato Archer (JICC´2025 - out/25)
+    - Desenvolvimento do Poster Científico: criação do poster científico destinado à Jornada de Iniciação Científica do CTI Renato Archer (JICC´2025 - out/25)
+
+- out/25
+    - Vídeo de Apresentação do Artigo Científico: gravação do vídeo de apresentação do artigo científico destinado à Jornada de Iniciação Científica do CTI Renato Archer (JICC´2025 - out/25)
 
 ## Resultados Obtidos
 
